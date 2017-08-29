@@ -1,0 +1,5 @@
+cron:
+- description: My Daily Backup
+  url: /_ah/datastore_admin/backup.create?name=Daily&kind=Device&filesystem=gs&gs_bucket_name=totallydevnote.appspot.com
+  schedule: every 12 hours
+  target: ah-builtin-python-bundle
